@@ -44,6 +44,10 @@ Before starting development, you need to ensure:
 - Create a DevFlag
 - Start the development
 
+Further reading for the PROs:
+
+- https://antman-does-software.com/dev-flags-supercharge-your-continuous-deployment-by-dropping-database-feature-toggles
+- https://github.blog/2021-04-27-ship-code-faster-safer-feature-flags/
 
 ## Usage
 
@@ -73,14 +77,18 @@ return [
 Func-way:
 
 ```php
-$useNewFeature = useDevFlag('useNewFeature');
+function transfer(): ?Transaction
+{
+    $useNewFeature = useDevFlag('useNewFeature');
 
-if (!$useNewFeature) {
-    return null;
+    if (!$useNewFeature) {
+        return null;
+    }
+
+    // doing awesome things
+    
+    return $transaction;
 }
-
-// doing awesome things
-
 ```
 
 OOP/DI-way:
@@ -111,4 +119,8 @@ Check out WIKI: https://github.com/shipsaas/dev-flag/wiki
 Feel free to open a PR 😉
 
 ## Maintainer
-- Seth Phat
+- @sethsandaru
+
+## License
+
+MIT License
