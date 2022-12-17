@@ -2,6 +2,7 @@
   "name": "shipsaas/dev-flag",
   "type": "library",
   "description": "Dev Flag implementation for Laravel Applications",
+  "version": "1.0.0",
   "keywords": [
     "laravel devflag",
     "laravel feature flag",
