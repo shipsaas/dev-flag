@@ -1,0 +1,71 @@
+{
+  "name": "shipsaas/dev-flag",
+  "type": "library",
+  "description": "Dev Flag implementation for Laravel Applications",
+  "keywords": [
+    "laravel devflag",
+    "laravel feature flag",
+    "laravel devflag ci/cd best practices with ShipSaaS"
+  ],
+  "authors": [
+    {
+      "name": "Seth Phat",
+      "email": "phattranminh96@gmail.com",
+      "homepage": "https://github.com/sethsandaru",
+      "role": "Tech Lead"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^8.0|^8.1",
+    "laravel/framework": "^9"
+  },
+  "require-dev": {
+    "fakerphp/faker": "^v1.20.0",
+    "mockery/mockery": "^1.5.1",
+    "phpunit/phpunit": "^9.5.25",
+    "orchestra/testbench": "^7",
+    "phpunit/php-code-coverage": "^9.2.17",
+    "symfony/console": "^6.0.9",
+    "symfony/error-handler": "^6.0",
+    "symfony/finder": "^6.0",
+    "symfony/http-foundation": "^6.0",
+    "symfony/http-kernel": "^6.0",
+    "symfony/mailer": "^6.0",
+    "symfony/mime": "^6.0",
+    "symfony/process": "^6.0",
+    "symfony/routing": "^6.0",
+    "symfony/uid": "^6.0",
+    "symfony/var-dumper": "^6.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ShipSaaS\\DevFlag\\DevFlagServiceProvider"
+      ],
+      "alias": {
+        "DevFlag": "\\ShipSaaS\\DevFlag\\Facade"
+      }
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "ShipSaaS\\DevFlag\\": "src/"
+    },
+    "files": [
+      "src/Functions/functions.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ShipSaaS\\DevFlag\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test-coverage": [
+      "@php vendor/bin/phpunit --coverage-clover coverage.xml"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
