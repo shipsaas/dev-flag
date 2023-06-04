@@ -2,6 +2,7 @@
 
 [![Build & Test (Laravel vers)](https://github.com/shipsaas/dev-flag/actions/workflows/build_laravel.yml/badge.svg)](https://github.com/shipsaas/dev-flag/actions/workflows/build_laravel.yml)
 [![Build & Test (PHP vers)](https://github.com/shipsaas/dev-flag/actions/workflows/build_php.yml/badge.svg)](https://github.com/shipsaas/dev-flag/actions/workflows/build_php.yml)
+[![Try Install Package (Laravel vers)](https://github.com/shipsaas/dev-flag/actions/workflows/try-installation.yml/badge.svg)](https://github.com/shipsaas/dev-flag/actions/workflows/try-installation.yml)
 [![codecov](https://codecov.io/gh/shipsaas/dev-flag/branch/main/graph/badge.svg?token=4WAI95PDUT)](https://codecov.io/gh/shipsaas/dev-flag)
 
 DevFlag (aka Feature Flag) enabling your Application Development to follow the CI/CD best practices.
@@ -26,7 +27,8 @@ php artisan vendor:publish --tag=devflag
 
 ### Problems
 
-IRL projects, definitely there would be PRs that contains a lot of changes (thousands of lines, 50+ files). 
+IRL projects, it is inevitable for PRs that contains a lot of changes (thousands of lines, 50+ files). 
+
 For those PRs, even you have 10 people to review, they still won't cover everything 100%. Simply because it is too much.
 
 Everybody loves small PRs and that is the undeniable fact. But how can we achieve it?
