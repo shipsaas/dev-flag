@@ -41,8 +41,6 @@ jobs:
                     composer require \
                         "laravel/framework" "^9" \
                         "orchestra/testbench" "^7" \
-                        "phpunit/phpunit" "^9" \
-                        "phpunit/php-code-coverage" "^9" \
                         --with-all-dependencies
 
             -   name: Laravel 10 composition
