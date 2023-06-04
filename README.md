@@ -1,6 +1,7 @@
 # Laravel DevFlag / FeatureFlag - ShipSaaS
 
-[![Build and test [PHP8.1]](https://github.com/shipsaas/dev-flag/actions/workflows/build_php81.yml/badge.svg)](https://github.com/shipsaas/dev-flag/actions/workflows/build_php81.yml)
+[![Build & Test (Laravel vers)](https://github.com/shipsaas/dev-flag/actions/workflows/build_laravel.yml/badge.svg)](https://github.com/shipsaas/dev-flag/actions/workflows/build_laravel.yml)
+[![Build & Test (PHP vers)](https://github.com/shipsaas/dev-flag/actions/workflows/build_php.yml/badge.svg)](https://github.com/shipsaas/dev-flag/actions/workflows/build_php.yml)
 [![codecov](https://codecov.io/gh/shipsaas/dev-flag/branch/main/graph/badge.svg?token=4WAI95PDUT)](https://codecov.io/gh/shipsaas/dev-flag)
 
 DevFlag (aka Feature Flag) enabling your Application Development to follow the CI/CD best practices.
