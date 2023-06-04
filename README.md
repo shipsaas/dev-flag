@@ -6,8 +6,8 @@
 DevFlag (aka Feature Flag) enabling your Application Development to follow the CI/CD best practices.
 
 ## Support
-- PHP 8.0 & PHP 8.1
-- Laravel 9.x
+- PHP 8.0+
+- Laravel 9.x & 10.x
 
 ## Install
 
@@ -33,7 +33,7 @@ Everybody loves small PRs and that is the undeniable fact. But how can we achiev
 Welcome to DevFlag!
 
 ### Solutions
-DevFlag aka Feature Flag will help you to achieve that. Not only the tool, but also require a bit of your critical thinking.
+DevFlag will help you to achieve that. Not only the tool, but also require a bit of your critical thinking.
 
 Before starting development, you need to ensure:
 
@@ -46,8 +46,7 @@ Before starting development, you need to ensure:
 
 Further reading for the PROs:
 
-- https://antman-does-software.com/dev-flags-supercharge-your-continuous-deployment-by-dropping-database-feature-toggles
-- https://github.blog/2021-04-27-ship-code-faster-safer-feature-flags/
+- [Practical on DevFlag](https://antman-does-software.com/dev-flags-supercharge-your-continuous-deployment-by-dropping-database-feature-toggles)
 
 ## Usage
 
